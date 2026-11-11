@@ -66,7 +66,7 @@ int main() {
 		else if (cmdIndex==9){
 			//cd
 			if (tokenLength!=2){
-				printf("cd: too many arguments\n");
+				printf("-rsh: cd: too many arguments\n");
 				continue;
 			}
 
@@ -81,7 +81,7 @@ int main() {
 			//help
 			printf("The allowed commands are:\n");
 			for (int i=0; i<N; i++){
-				printf("%d:%s\n", i+1, allowed[i]);
+				printf("%d: %s\n", i+1, allowed[i]);
 			}
 		}
 
